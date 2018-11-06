@@ -1,6 +1,5 @@
-const Command = require('../../structures/Command');
-const { stripIndents } = require('common-tags');
-const { randomRange, verify } = require('../../util/Util');
+const Discord = require('discord.js');
+const ayarlar = require('../ayarlar.json');
 
 exports.run = (client, message, args) => {
 	if (!message.guild) {

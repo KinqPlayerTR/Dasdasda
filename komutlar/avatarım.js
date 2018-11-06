@@ -1,6 +1,4 @@
-const Command = require('../../structures/Command');
-const { stripIndents } = require('common-tags');
-const { randomRange, verify } = require('../../util/Util');
+const Discord = require('discord.js');
 exports.run = function(client, message, args) {
 message.channel.sendEmbed(new Discord.RichEmbed()
 .setDescription(`Avatarınız:`)

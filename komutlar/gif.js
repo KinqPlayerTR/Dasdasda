@@ -1,6 +1,4 @@
-const Command = require('../../structures/Command');
-const { stripIndents } = require('common-tags');
-const { randomRange, verify } = require('../../util/Util');
+const Discord = require('discord.js');
 
 exports.run = (client, message, args) => {
   // Voice only works in guilds, if the message does not come from a guild,
