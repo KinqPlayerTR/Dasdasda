@@ -80,7 +80,13 @@ client.unload = command => {
 
 client.on('message', msg => {
   if (msg.content.toLowerCase() === 'sa') {
-    msg.reply('Aleyküm selam,  hoş geldin ^^');
+    msg.reply('Aleyküm selam,  hoş geldin Nasılsın ');
+client.on('message', msg => {
+  if (msg.content.toLowerCase() === 'naber') {
+    msg.reply('İyi Senden Naber :D ');
+client.on('message', msg => {
+  if (msg.content.toLowerCase() === 'kraliyet') {
+    msg.reply('ooo Kraliyet Üye Adayı Var Galiba Deniz Adamdır ');
   }
 });
 
