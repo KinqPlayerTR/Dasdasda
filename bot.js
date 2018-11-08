@@ -80,8 +80,9 @@ client.unload = command => {
 
 client.on('message', msg => {
   if (msg.content.toLowerCase() === 'sa') {
-    msg.reply('Aleyküm selam,  hoş geldin Nasılsın');
-};
+    msg.reply('Aleyküm Selam,  Hoş Geldin Nasilsin');
+  }
+});
 
 client.elevation = message => {
   if(!message.guild) {
