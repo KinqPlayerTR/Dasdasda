@@ -83,6 +83,7 @@ client.on('message', msg => {
     msg.reply('Aleyküm Selam,  Hoş Geldin Nasilsin');
   }
 });
+
 client.on('message', msg => {
   if (msg.content.toLowerCase() === 'naber') {
     msg.reply('İyi Senden Naber');
