@@ -80,13 +80,19 @@ client.unload = command => {
 
 client.on('message', msg => {
   if (msg.content.toLowerCase() === 'sa') {
-    msg.reply('Aleyküm Selam,  Hoş Geldin Nasilsin');
+    msg.reply('Aleyküm Selam  Hoş Geldin Nasilsin :)');
   }
 });
 
 client.on('message', msg => {
   if (msg.content.toLowerCase() === 'naber') {
-    msg.reply('İyi Senden Naber');
+    msg.reply('İyi Senden Naber :)');
+  }
+});
+
+client.on('message', msg => {
+  if (msg.content.toLowerCase() === 'kraliyet') {
+    msg.reply('KraliyetBot Emrinde');
   }
 });
 
