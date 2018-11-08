@@ -14,7 +14,7 @@ exports.run = (client, message, params) => {
     .setAuthor(message.author.username + `  Atatürk u Çok Sevmiş Olmalı.`)
     .setColor("#D2D2D2")
     .setDescription('')
-  .setImage(`https://gfycat.com/DisfiguredAdvancedCurassow`)
+  .setImage(`https://i.imgur.com/a/jefWtRF`)
     return message.channel.sendEmbed(sunucubilgi);
     }
 };
