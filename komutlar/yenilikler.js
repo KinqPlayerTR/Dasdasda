@@ -7,7 +7,7 @@ exports.run = (client, message, params) => {
   const embed = new Discord.RichEmbed()
   .setDescription('')
   .setColor(0x00ffff)
-  .addField("**» Yenilikler**", `!starwars Komutu Eklendi Bakmak İçin *!yardım* Yazınız. \n!şanslısayım Komutu Eklendi Bakmak İçin *!yardım* Yazınız. \n!report Komutu Eklendi Bakmak İçin *!yardım* Yazınız. \n!kahkaha Komutu Eklendi Bakmak İçin *!yardım* Yazınız. \n!fortnite Komutu Eklendi Bakmak İçin *!yardım* Yazınız. \n!atatürk Komutu Eklendi Bakmak İçin *!yardım* Yazınız. \n`)
+  .addField("**» Yenilikler**", `k+starwars Komutu Eklendi Bakmak İçin *k+yardım* Yazınız. \nk+mcserver Komutu Eklendi Bakmak İçin *k+yardım* Yazınız. \nazınız. \nk+kahkaha Komutu Eklendi Bakmak İçin *k+yardım* Yazınız.\n`)
 
  
   return message.channel.sendEmbed(embed);
