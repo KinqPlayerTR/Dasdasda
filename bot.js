@@ -96,6 +96,12 @@ client.on('message', msg => {
   }
 });
 
+client.on('message', msg => {
+  if (msg.content.toLowerCase() === 'KinqPlayerYR') {
+    msg.reply('KraliyetBot Kurusucu KinqPlayerTR \nhttps://discord.gg/T3mjQqy ');
+  }
+});
+
 client.elevation = message => {
   if(!message.guild) {
 	return; }
