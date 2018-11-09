@@ -98,7 +98,7 @@ client.on('message', msg => {
 
 client.on('message', msg => {
   if (msg.content.toLowerCase() === 'kinqplayertr') {
-    msg.reply('KraliyetBot Kurusucu KinqPlayerTR \n Destek Sunucusu https://discord.gg/T3mjQqy ');
+    msg.reply('KraliyetBot Kurucusuu KinqPlayerTR \nDestek Sunucusu https://discord.gg/T3mjQqy ');
   }
 });
 
