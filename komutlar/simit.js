@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 const ayarlar = require('../ayarlar.json');
 
 exports.run = (client, message, params) => {
-	if (!message.guild) {
+    if (!message.guild) {
     const ozelmesajuyari = new Discord.RichEmbed()
     .setColor(0xFF0000)
     .setTimestamp()
@@ -11,11 +11,11 @@ exports.run = (client, message, params) => {
     return message.author.sendEmbed(ozelmesajuyari); }
     if (message.channel.type !== 'dm') {
       const sunucubilgi = new Discord.RichEmbed()
-    .setAuthor('Koca Yürekli ' + message.author.username + 'Herkese Çay Aldı!')
+    .setAuthor(message.author.username +  ' Simit Yedin!')
     .setColor(3447003)
     .setTimestamp()
     .setDescription('')
-		.setImage(`https://media.giphy.com/media/qrOTVsvYm1JIc/giphy.gif`)
+        .setImage(`https://www.bobiler.org/monte/preview/116199/bobiler.gif`)
     return message.channel.sendEmbed(sunucubilgi);
     }
 };
@@ -28,7 +28,7 @@ exports.conf = {
 };
 
 exports.help = {
-  name: 'herkesebendençay',
-  description: 'Herkese Çay Verir',
-  usage: 'herkesebendençay'
+  name: 'simit',
+  description: 'Simit Yer.',
+  usage: 'simit'
 };

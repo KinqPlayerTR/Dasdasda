@@ -2,20 +2,20 @@ const Discord = require('discord.js');
 const ayarlar = require('../ayarlar.json');
 
 exports.run = (client, message, params) => {
-	if (!message.guild) {
+    if (!message.guild) {
     const ozelmesajuyari = new Discord.RichEmbed()
-    .setColor(0xFF0000)
+    .setColor('RANDOM')
     .setTimestamp()
     .setAuthor(message.author.username, message.author.avatarURL)
     .addField('**Eğlence Komutları Özel Mesajlarda Kullanılamaz!**')
     return message.author.sendEmbed(ozelmesajuyari); }
     if (message.channel.type !== 'dm') {
       const sunucubilgi = new Discord.RichEmbed()
-    .setAuthor('Koca Yürekli ' + message.author.username + 'Herkese Çay Aldı!')
-    .setColor(3447003)
+    .setAuthor(message.author.username + ' Polis Geliyor!!!!')
+    .setColor('RANDOM')
     .setTimestamp()
     .setDescription('')
-		.setImage(`https://media.giphy.com/media/qrOTVsvYm1JIc/giphy.gif`)
+        .setImage(`http://www.hareketligifler.net/data/media/114/polis-hareketli-resim-0023.gif`)
     return message.channel.sendEmbed(sunucubilgi);
     }
 };
@@ -28,7 +28,7 @@ exports.conf = {
 };
 
 exports.help = {
-  name: 'herkesebendençay',
-  description: 'Herkese Çay Verir',
-  usage: 'herkesebendençay'
+  name: 'ara155',
+  description: 'Polisi Arar (ciddiye almayın)',
+  usage: 'ara155'
 };

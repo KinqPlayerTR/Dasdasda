@@ -8,8 +8,18 @@ exports.run = (client, message) => {
     .setColor(0x00AE86)
     .setTimestamp()
     .setAuthor(message.author.username, message.author.avatarURL)
-    .setDescription('KraliyetBOT Bot Minecraft Suncusu \n KraliyetNW.AxiTRBilisim.com Beta \n İşte Davet Linkim: https://bit.ly/KraliyetBOT \n KraliyetBOT Destek Discord Sunucusu  \nhttps://discord.gg/T3mjQqy');
+    .setDescription('Özel Mesajlarına Bilgi Mesajımı Attım! :postbox: ');
     message.channel.sendEmbed(ozelmesajkontrol) }
+	const pingozel = new Discord.RichEmbed()
+    .setColor(0x00AE86)
+    .setAuthor(message.author.username, message.author.avatarURL)
+	.addField("**❯ Yapımcı**", " @Dr.claw#7336 ", )
+  .addField("**❯ Sürüm**", " BETA v0.2.5 ", )
+  .addField("**❯ Yapıldığı Tarih**", " 12 Mart 2018 ", )
+	.addField("**❯ Bot Davet**", " [Davet Et](https://is.gd/VS13af)", )
+  .addField("**❯ Destek sunucusu**", " [Sunucumuza Katıl](https://discord.gg/xW5kj) ", )
+	.setThumbnail("https://forum.gamer.com.tr/attachments/bilgi-png.55209/");
+    return message.author.sendEmbed(pingozel)
 };
 
 exports.conf = {
@@ -20,7 +30,7 @@ exports.conf = {
 };
 
 exports.help = {
-  name: 'mcserver',
+  name: 'bilgi',
   description: 'Bot ile ilgili bilgi verir.',
-  usage: 'mcserver'
+  usage: 'bilgi'
 };

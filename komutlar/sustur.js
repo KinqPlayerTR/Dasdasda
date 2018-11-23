@@ -11,9 +11,9 @@ exports.run = (client, message, args) => {
   let guild = message.guild
   let reason = args.slice(1).join(' ');
   let user = message.mentions.users.first();
-  let modlog = guild.channels.find('name', 'mod-log');
+  let modlog = guild.channels.find('name', 'log');
   let muteRole = client.guilds.get(message.guild.id).roles.find('name', 'Muted');
-  if (!modlog) return message.reply('`mod-log` **kanalını bulamıyorum.**').catch(console.error);
+  if (!modlog) return message.reply('`log` **kanalını bulamıyorum.**').catch(console.error);
   if (!muteRole) return message.reply('`Muted` **adlı bir rol bulamıyorum.**').catch(console.error);
   if (reason.length < 1) return message.reply(' **Susturma sebebini Yazmadın!** ').catch(console.error);
   if (message.mentions.users.size < 1) return message.reply(' **Kimi susturacağını Belirtmedin!** ').catch(console.error);

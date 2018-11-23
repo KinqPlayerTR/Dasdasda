@@ -1,33 +1,31 @@
 const Discord = require('discord.js');
 const ayarlar = require('../ayarlar.json');
 
-exports.run = (client, message, params) => {
-	if (!message.guild) {
-    const ozelmesajuyari = new Discord.RichEmbed()
-    .setColor(0xFF0000)
-    .setTimestamp()
-    .setAuthor(message.author.username, message.author.avatarURL)
-    .addField('**Eğlence Komutları Özel Mesajlarda Kullanılamaz!**')
-    return message.author.sendEmbed(ozelmesajuyari); }
-    if (message.channel.type !== 'dm') {
-      const sunucubilgi = new Discord.RichEmbed()
-    .setAuthor(message.author.username + `  Atatürk u Çok Sevmiş Olmalı.`)
-    .setColor("#D2D2D2")
-    .setDescription('')
-  .setImage(`https://media.tenor.com/images/61afdd89839eb532bf5a020fed4b103d/tenor.gif`)
-    return message.channel.sendEmbed(sunucubilgi);
-    }
+exports.run = (client, message, args) => {
+  message.channel.send(':clock1: | Fotoğraf Yükleniyor..')
+  ataturk1 = "./img/ataturk/1.jpg"; ataturk2 = "./img/ataturk/2.jpg"; ataturk3 = "./img/ataturk/3.jpg"; ataturk4 = "./img/ataturk/4.jpg"; ataturk5 = "./img/ataturk/5.jpg"; ataturk6 = "./img/ataturk/6.jpg";
+    number = 3,2,4,1,5,6
+    var random = Math.floor(Math.random() * (number - 1 + 1)) + 1; 
+    switch(random) {
+        case 1: message.channel.send({ files: [ataturk1] }); message.channel.bulkDelete(1); break;
+        case 2: message.channel.send({ files: [ataturk2] }); message.channel.bulkDelete(1); break;
+        case 3: message.channel.send({ files: [ataturk3] }); message.channel.bulkDelete(1); break;
+        case 4: message.channel.send({ files: [ataturk4] }); message.channel.bulkDelete(1); break;
+        case 5: message.channel.send({ files: [ataturk5] }); message.channel.bulkDelete(1); break;
+        case 6: message.channel.send({ files: [ataturk6] }); message.channel.bulkDelete(1); break;
 };
+};
+
 
 exports.conf = {
   enabled: true,
   guildOnly: false,
-  aliases: ['ataturk'],
+  aliases: ['atatürk', 'ata'],
   permLevel: 0
 };
 
 exports.help = {
-  name: 'ataturk',
-  description: 'Atatürkü Gösterir',
-  usage: 'ataturk'
+  name: 'atatürk',
+  description: 'Rastgele Atatürk Fotoğrafların Gösterir.!',
+  usage: 'atatürk'
 };

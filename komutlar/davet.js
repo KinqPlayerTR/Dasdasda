@@ -13,7 +13,7 @@ exports.run = (client, message) => {
     .setColor(0x00AE86)
     .setTimestamp()
     .setAuthor(message.author.username, message.author.avatarURL)
-    .setDescription('İşte Davet Linkim: http://bit.ly/KraliyetBOT ');
+    .setDescription('İşte Davet Linkim: https://is.gd/VS13af');
     return message.author.sendEmbed(pingozel)
 };
 

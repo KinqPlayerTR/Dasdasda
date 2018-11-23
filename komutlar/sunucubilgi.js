@@ -12,19 +12,20 @@ exports.run = (client, message, params) => {
     return message.author.sendEmbed(ozelmesajuyari); }
     if (message.channel.type !== 'dm') {
       const sunucubilgi = new Discord.RichEmbed()
-    .setColor(0x00AE86)
-    .setTimestamp()
+    .setColor("#15f153")
     .setAuthor(message.guild.name, message.guild.iconURL)
     .addField('Sunucu Adı:', message.guild.name)
     .addField('Sunucu ID:', message.guild.id)
     .addField('Ana kanal:', message.guild.defaultChannel)
+    .addField('Kanal sayısı:', message.guild.channels.size)
     .addField('Sunucu Bölgesi:', message.guild.region)
     .addField('Üye sayısı:', message.guild.memberCount)
     .addField('Sahibi:', message.guild.owner + ' (' + message.guild.ownerID + ')')
-    .addField('Kanal sayısı:', message.guild.channels.size)
     .addField('Oluşturulma tarihi:', message.guild.createdAt)
+    .setThumbnail(message.guild.iconURL);
     return message.channel.sendEmbed(sunucubilgi);
     }
+	message.react("😂")
 };
 
 exports.conf = {
